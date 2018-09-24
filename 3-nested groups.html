@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/jquery.min.js"></script>
+    <!--*********IMPORTANT : use defer*********-->
+    <script defer src="js/r-resizable-panels.js"></script>
+    <style>
+        #panel1 {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 60%;
+            height: 400PX;
+            border: 1px solid;
+        }
+
+        #panel2,#panel3 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .r-resizable-panel {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="r-resizable-group" id="panel1" cols="30%,*,30%">
+        <div class="r-resizable-panel">
+            <div class="r-resizable-group" id="panel2" rows="30%,*,50px">
+                <div class="r-resizable-panel">
+                    Panel1
+                </div>
+                <div class="r-resizable-panel">
+                    Panel2
+                </div>
+                <div class="r-resizable-panel">
+                    Panel3
+                </div>
+            </div>
+        </div>
+        <div class="r-resizable-panel">
+            Panel4
+        </div>
+        <div class="r-resizable-panel">
+            <div class="r-resizable-group" id="panel3" rows="50px,*,50px">
+                <div class="r-resizable-panel">
+                    Panel5
+                </div>
+                <div class="r-resizable-panel">
+                    Panel6
+                </div>
+                <div class="r-resizable-panel">
+                    Panel7
+                </div>
+            </div>
+        </div>
+    </div>
+    each panel can get a diffrent group
+</body>
+</html>
