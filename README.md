@@ -1,0 +1,1 @@
+r-resizable-panels
