@@ -4,3 +4,4 @@ r-resizable-panels
 ***you can set thickness of splitters with attribute (data-splitter-thickness="?")
 ***you can set size of panels width cols(in horizontal panels) or rows(in vertical panels) attributes. cols or rows can get size with px or % or *.
 
+horizontal.html => live demo in codepen : https://codepen.io/mohammadfeiz/pen/dqBJMG
